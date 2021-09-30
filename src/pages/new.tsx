@@ -54,7 +54,7 @@ const TaskFormPage = () => {
             value={task.title}
           />
           <textarea
-            cols="2"
+            cols={2}
             placeholder="Write a Description"
             className="bg-gray-800 focus:text-gray-100 focus:outline-none w-full py-3 px-4 mb-5"
             name="description"

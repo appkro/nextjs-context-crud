@@ -7,7 +7,13 @@ import { VscTrash, VscTasklist } from "react-icons/vsc";
 function Home() {
   const { tasks, deleteTask } = useTasks();
   const router = useRouter();
-
+  const data: {
+    nombre: string,
+    edad: number
+  } = {
+    edad: 15,
+    nombre: 'Julio'
+  }
   return (
     <Layout>
       <div className="flex justify-center">

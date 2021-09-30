@@ -1,7 +1,7 @@
 import { createContext, useContext, useState } from "react";
 import { v4 as uuid } from "uuid";
 
-const TaskContext = createContext();
+const TaskContext = createContext(null);
 
 export const TasksProvider = ({ children }) => {
   const [tasks, setTasks] = useState([]);
