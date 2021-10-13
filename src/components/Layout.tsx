@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Layout = ({ children }) => {
   return (
-    <div className="h-full bg-gray-900 text-white max-w-screen-lg">
+    <div className="h-full w-full bg-gray-900 text-white max-w-screen-lg">
       <div className="navbar shadow-lg bg-neutral text-neutral-content">
         <div className="flex-1 px-2 mx-2">
           {/* eslint-disable-next-line @next/next/link-passhref */}
