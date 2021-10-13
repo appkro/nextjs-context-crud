@@ -13,6 +13,7 @@ function Home() {
         alt="Picture of the author"
         width={1536}
         height={600}
+        className="z-0"
       />
       <p className="px-32 py-14 text-2xl text-justify">
         Contamos con más de 12 años de experiencia en la fabricación y
@@ -38,7 +39,7 @@ function Home() {
         </div>
         <select className="select select-bordered w-full my-2">
           <option disabled selected>
-            Normal
+            Seleccione País
           </option>
           <option>telekinesis</option>
           <option>time travel</option>
@@ -47,30 +48,71 @@ function Home() {
         <div className="form-control py-2">
           <input
             type="text"
-            placeholder="Nombre"
+            placeholder="Empresa"
             className="input input-bordered"
           />
         </div>
         <div className="form-control py-2">
           <input
             type="text"
-            placeholder="Nombre"
+            placeholder="Teléfono"
             className="input input-bordered"
           />
         </div>
         <div className="form-control py-2">
           <input
             type="text"
-            placeholder="Nombre"
+            placeholder="Página Web"
             className="input input-bordered"
           />
         </div>
+
+        <div className="">
+          <div className="form-control">
+            <label className="cursor-pointer label justify-start">
+              <input
+                type="radio"
+                name="opt"
+                defaultChecked={true}
+                className="radio"
+                value=""
+              />
+              <span className="label-text pl-7">Mistikat</span>
+            </label>
+          </div>
+          <div className="form-control">
+            <label className="cursor-pointer label justify-start">
+              <input
+                type="radio"
+                name="opt"
+                defaultChecked={true}
+                className="radio"
+                value=""
+              />
+              <span className="label-text pl-7">Petclean</span>
+            </label>
+          </div>
+          <div className="form-control">
+            <label className="cursor-pointer label justify-start">
+              <input
+                type="radio"
+                name="opt"
+                defaultChecked={true}
+                className="radio"
+                value=""
+              />
+              <span className="label-text pl-7">Marca Propia</span>
+            </label>
+          </div>
+        </div>
         <div className="form-control py-2">
-          <input
-            type="text"
-            placeholder="Nombre"
-            className="input input-bordered"
-          />
+          <textarea
+            className="textarea h-24 textarea-bordered"
+            placeholder="Comentario"
+          ></textarea>
+        </div>
+        <div className="flex justify-center py-10">
+          <button className="btn btn-primary w-32">Enviar</button>
         </div>
       </form>
     </Layout>

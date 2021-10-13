@@ -1,8 +1,10 @@
 import Link from "next/link";
 
+import { GiHamburgerMenu } from "react-icons/gi";
 const Layout = ({ children }) => {
+  const theme = 'light';
   return (
-    <div className="h-full w-full bg-gray-900 text-white max-w-screen-lg">
+    <div data-theme={theme} className="h-full w-full text-white max-w-screen-lg">
       <div className="navbar shadow-lg bg-neutral text-neutral-content">
         <div className="flex-1 px-2 mx-2">
           {/* eslint-disable-next-line @next/next/link-passhref */}
@@ -19,7 +21,7 @@ const Layout = ({ children }) => {
         </div>
         <div className="flex-none lg:hidden">
           <button className="btn btn-square btn-ghost dropdown dropdown-end">
-            <svg
+            {/* <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -32,10 +34,11 @@ const Layout = ({ children }) => {
                 stroke-width="2"
                 d="M4 6h16M4 12h16M4 18h16"
               ></path>
-            </svg>
+            </svg> */}
+            <GiHamburgerMenu className="inline-block w-6 h-6 stroke-current" tabIndex={0} />
             <ul
               tabIndex={0}
-              className="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52"
+              className="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52 z-10"
             >
               <Link href="/distribuidor">
                 <a className="uppercase">Distribuidor</a>
@@ -45,7 +48,7 @@ const Layout = ({ children }) => {
         </div>
       </div>
 
-      <main className="h-5/6">{children}</main>
+      <main data-theme={theme} className="h-5/6">{children}</main>
     </div>
   );
 };
