@@ -2,12 +2,12 @@ import Link from "next/link";
 
 const Layout = ({ children }) => {
   return (
-    <div className="h-screen bg-gray-900 text-white">
-      <div className="navbar mb-2 shadow-lg bg-neutral text-neutral-content">
+    <div className="h-full bg-gray-900 text-white max-w-screen-lg">
+      <div className="navbar shadow-lg bg-neutral text-neutral-content">
         <div className="flex-1 px-2 mx-2">
           {/* eslint-disable-next-line @next/next/link-passhref */}
           <Link href="/">
-            <span className="text-lg font-bold cursor-pointer">Fábrica de arena para gatos</span>
+            <h1 className="text-lg font-bold cursor-pointer">Fábrica de arena para gatos</h1>
           </Link>
         </div>
         <div className="flex-none hidden px-2 mx-2 lg:flex">
@@ -45,7 +45,7 @@ const Layout = ({ children }) => {
         </div>
       </div>
 
-      <main className="h-5/6 px-28 py-10">{children}</main>
+      <main className="h-5/6">{children}</main>
     </div>
   );
 };
