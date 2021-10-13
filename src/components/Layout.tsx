@@ -1,35 +1,49 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
-import { useTasks } from "../context/TasksContext";
-import { AiOutlinePlus } from "react-icons/ai";
 
 const Layout = ({ children }) => {
-  const router = useRouter();
-  const { tasks } = useTasks();
-
   return (
     <div className="h-screen bg-gray-900 text-white">
-      <header className="flex items-center bg-gray-800 px-28 py-5">
-        <Link href="/">
-          <a>
-            <h1 className="font-black text-lg">Task App</h1>
-          </a>
-        </Link>
-
-        <span className="ml-2 text-gray-400 font-bold">
-          {tasks.length} tasks
-        </span>
-
-        <div className="flex-grow text-right">
-          <button
-            className="bg-green-500 hover:bg-green-400 px-5 py-2 text-gray font-bold rounded-sm inline-flex items-center"
-            onClick={() => router.push("/new")}
-          >
-            <AiOutlinePlus className="mr-2" />
-            Add Task
+      <div className="navbar mb-2 shadow-lg bg-neutral text-neutral-content">
+        <div className="flex-1 px-2 mx-2">
+          {/* eslint-disable-next-line @next/next/link-passhref */}
+          <Link href="/">
+            <span className="text-lg font-bold cursor-pointer">Fábrica de arena para gatos</span>
+          </Link>
+        </div>
+        <div className="flex-none hidden px-2 mx-2 lg:flex">
+          <div className="flex items-stretch">
+            <Link href="/distribuidor">
+              <a className="btn btn-ghost btn-sm rounded-btn">Distribuidor</a>
+            </Link>
+          </div>
+        </div>
+        <div className="flex-none lg:hidden">
+          <button className="btn btn-square btn-ghost dropdown dropdown-end">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              className="inline-block w-6 h-6 stroke-current"
+              tabIndex={0}
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+            <ul
+              tabIndex={0}
+              className="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52"
+            >
+              <Link href="/distribuidor">
+                <a className="uppercase">Distribuidor</a>
+              </Link>
+            </ul>
           </button>
         </div>
-      </header>
+      </div>
 
       <main className="h-5/6 px-28 py-10">{children}</main>
     </div>
