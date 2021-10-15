@@ -9,112 +9,97 @@ function Home() {
   return (
     <Layout>
       <Image
-        src="https://arenaparagato.com/assets/images/petclean/image_distri.svg"
+        src="https://arenaparagato.com/assets/images/principal/mujerYgato.png"
         alt="Picture of the author"
         width={1536}
         height={600}
         className="z-0"
       />
-      <p className="px-32 py-14 text-2xl text-justify">
-        Contamos con más de 12 años de experiencia en la fabricación y
-        comercializacion de arena para gatos, elaborada con minerales naturales
-        de alta calidad.
+      <p className="px-8 lg:px-20 md:px-32 py-14 text-xl lg:text-2xl text-justify text-black">
+        Somos una empresa ecuatoriana lider en producción y comercialización de
+        arena para gato con las mejores materias primas naturales que eliminan
+        eficazmente el mal olor y ofrece una alta capacidad de absorción.
       </p>
-      <p className="px-32 pt-0.5 text-2xl text-justify">
-        Damos la opción de distribuir nuestras marcas Mistikat / Petclean, o
-        fabricar bajo una nueva marca para que desarrolle su propio mercado.
-        Nuestra capacidad de producción nos permite atender requerimientos de
-        altos volumenes.
-      </p>
-      <h1 className="px-32 pt-16 text-center text-5xl">
-        PONGASE EN CONTACTO CON NOSOTROS
+      <h1 className="px-8 lg:px-40 md:px-32 py-16 text-center text-xl lg:text-4xl text-yellow-500">
+        Nuestras Marcas
       </h1>
-      <form action="" className="px-64 pt-16">
-        <div className="form-control py-2">
-          <input
-            type="text"
-            placeholder="Nombre"
-            className="input input-bordered"
-          />
-        </div>
-        <select className="select select-bordered w-full my-2">
-          <option disabled selected>
-            Seleccione País
-          </option>
-          <option>telekinesis</option>
-          <option>time travel</option>
-          <option>invisibility</option>
-        </select>
-        <div className="form-control py-2">
-          <input
-            type="text"
-            placeholder="Empresa"
-            className="input input-bordered"
-          />
-        </div>
-        <div className="form-control py-2">
-          <input
-            type="text"
-            placeholder="Teléfono"
-            className="input input-bordered"
-          />
-        </div>
-        <div className="form-control py-2">
-          <input
-            type="text"
-            placeholder="Página Web"
-            className="input input-bordered"
-          />
-        </div>
-
-        <div className="">
-          <div className="form-control">
-            <label className="cursor-pointer label justify-start">
-              <input
-                type="radio"
-                name="opt"
-                defaultChecked={true}
-                className="radio"
-                value=""
-              />
-              <span className="label-text pl-7">Mistikat</span>
-            </label>
-          </div>
-          <div className="form-control">
-            <label className="cursor-pointer label justify-start">
-              <input
-                type="radio"
-                name="opt"
-                defaultChecked={true}
-                className="radio"
-                value=""
-              />
-              <span className="label-text pl-7">Petclean</span>
-            </label>
-          </div>
-          <div className="form-control">
-            <label className="cursor-pointer label justify-start">
-              <input
-                type="radio"
-                name="opt"
-                defaultChecked={true}
-                className="radio"
-                value=""
-              />
-              <span className="label-text pl-7">Marca Propia</span>
-            </label>
-          </div>
-        </div>
-        <div className="form-control py-2">
-          <textarea
-            className="textarea h-24 textarea-bordered"
-            placeholder="Comentario"
-          ></textarea>
-        </div>
-        <div className="flex justify-center py-10">
-          <button className="btn btn-primary w-32">Enviar</button>
-        </div>
-      </form>
+      <div className="grid grid-cols-2 gap-6 px-8 lg:px-20 md:px-20">
+        <Image
+          src="https://arenaparagato.com/assets/images/mistikat.svg"
+          alt="Picture of the author"
+          width={450}
+          height={87}
+          className="z-0"
+        />
+        <Image
+          src="https://arenaparagato.com/assets/images/petclean.svg"
+          alt="Picture of the author"
+          width={436}
+          height={77}
+          className="z-0"
+        />
+        <Image
+          src="https://arenaparagato.com/assets/images//principal/funda_mistikat.svg"
+          alt="Picture of the author"
+          width={570}
+          height={520}
+          className="z-0"
+        />
+        <Image
+          src="https://arenaparagato.com/assets/images//principal/funda_petclean.svg"
+          alt="Picture of the author"
+          width={410}
+          height={520}
+          className="z-0"
+        />
+      </div>
+      <h1 className="px-8 lg:px-40 md:px-32 py-16 text-center text-xl lg:text-4xl text-yellow-500">
+        Nuestros Clientes
+      </h1>
+      <div className="grid grid-cols-3 gap-12 px-8 py-16 lg:px-60 md:px-36">
+        <Image
+          src="https://arenaparagato.com/assets/images/mistikat/logomi-comisariato.png"
+          alt="Picture of the author"
+          width={100}
+          height={100}
+          className="z-0"
+        />
+        <Image
+          src="https://arenaparagato.com/assets/images/mistikat/logoaki.png"
+          alt="Picture of the author"
+          width={100}
+          height={100}
+          className="z-0"
+        />
+        <Image
+          src="https://arenaparagato.com/assets/images/principal/supermaxi.svg"
+          alt="Picture of the author"
+          width={100}
+          height={100}
+          className="z-0"
+        />
+        <Image
+          src="https://arenaparagato.com/assets/images/mistikat/logodelportal.png"
+          alt="Picture of the author"
+          width={100}
+          height={100}
+          className="z-0"
+        />
+        <Image
+          src="https://arenaparagato.com/assets/images/principal/coral.svg"
+          alt="Picture of the author"
+          width={100}
+          height={100}
+          className="z-0"
+        />
+        <Image
+          src="https://arenaparagato.com/assets/images/principal/tuti.svg"
+          alt="Picture of the author"
+          width={100}
+          height={100}
+          className="z-0"
+        />
+      </div>
     </Layout>
   );
 }
